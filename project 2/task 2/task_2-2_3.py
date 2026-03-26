@@ -1,0 +1,5 @@
+pribor = input()
+invnomer = input()
+sost = input()
+kolich = input()
+print("Прибор:", pribor, "Инвентарный номер:", invnomer, "Состояние:", sost, "Количество:", kolich, sep="\t")

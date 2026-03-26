@@ -1,0 +1,8 @@
+belki = input()
+jir = input()
+ugl = input()
+d = int(belki)
+c = int(jir)
+f = int(ugl)
+a = (d * 4) + (c * 9) + (f * 4)
+print(f"{a}")
