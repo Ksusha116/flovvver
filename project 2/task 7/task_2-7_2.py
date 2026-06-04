@@ -1,4 +1,4 @@
-seq = [ "ATATACGCGTA", "CTTCGGNGGA" ]
+seq = [ "диван", "собака" ]
 
 for name in seq:
     print(name)
