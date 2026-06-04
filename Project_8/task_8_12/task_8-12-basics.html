@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ксю Ксюша">
+  <title>CSS-селекторы</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222222;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      font-family: Arial, sans-serif;
+      color: darkblue;
+    }
+
+    #title {
+      background: #dbeafe;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    p {
+      background: white;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .lead {
+      font-weight: bold;
+      border-left: 6px solid orange;
+      background: #fff0d8;
+    }
+
+    .box {
+      background: white;
+      border: 1px solid #cccccc;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .box.highlight {
+      background: #e0f5e0;
+      border-left: 8px solid green;
+    }
+
+    .box.highlight.large {
+      font-size: 24px;
+      padding: 25px;
+      border: 2px solid darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">Практика CSS-селекторов</h1>
+
+  <p>
+    Это обычный абзац без класса. Он оформляется через селектор по тегу p.
+  </p>
+
+  <p class="lead">
+    Это важный абзац с классом lead. Он выделен отдельно через селектор класса.
+  </p>
+
+  <div class="box">
+    Обычный блок с классом box.
+  </div>
+
+  <div class="box highlight">
+    Блок с двумя классами: box и highlight.
+  </div>
+
+  <div class="box highlight large">
+    Блок с тремя классами: box, highlight и large.
+  </div>
+
+  <p>
+    Моя страница ВК:
+    <a href="https://vk.ru/smolinkidze" target="_blank" rel="noopener noreferrer">
+      vk.ru/smolinkidze
+    </a>
+  </p>
+
+  <p>Работу выполнила Ксю Ксюша.</p>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ксю Ксюша">
+  <title>Псевдоклассы CSS</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222222;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkblue;
+      background: #dbeafe;
+      padding: 15px;
+      text-align: center;
+    }
+
+    ol {
+      background: white;
+      padding: 20px 40px;
+      border: 1px solid #cccccc;
+    }
+
+    li {
+      padding: 8px;
+    }
+
+    li:first-child {
+      color: red;
+      font-weight: bold;
+    }
+
+    li:last-child {
+      color: green;
+      font-weight: bold;
+    }
+
+    li:nth-child(3n) {
+      background: #fff0d8;
+    }
+
+    li:not(:first-child) {
+      border-top: 1px solid #dddddd;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background: #e0eaff;
+    }
+
+    a {
+      color: blue;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    a[href$=".pdf"] {
+      color: darkred;
+      background: #ffe0e0;
+      padding: 4px;
+    }
+
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #999999;
+    }
+
+    input:focus {
+      border: 2px solid #4caf50;
+      outline: none;
+      background: #e0f5e0;
+    }
+
+    input:required {
+      border-left: 6px solid orange;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Практика с псевдоклассами</h1>
+
+  <h2>Список задач</h2>
+
+  <ol>
+    <li>Повторить HTML</li>
+    <li>Повторить CSS</li>
+    <li>Сделать задание 8-12</li>
+    <li>Проверить файлы</li>
+    <li>Сохранить скриншот</li>
+    <li>Загрузить работу</li>
+  </ol>
+
+  <h2>Таблица занятий</h2>
+
+  <table>
+    <tr>
+      <th>День</th>
+      <th>Тема</th>
+    </tr>
+    <tr>
+      <td>Понедельник</td>
+      <td>HTML</td>
+    </tr>
+    <tr>
+      <td>Вторник</td>
+      <td>CSS</td>
+    </tr>
+    <tr>
+      <td>Среда</td>
+      <td>Селекторы</td>
+    </tr>
+    <tr>
+      <td>Четверг</td>
+      <td>Практика</td>
+    </tr>
+  </table>
+
+  <h2>Ссылки</h2>
+
+  <p>
+    <a href="about.html">Внутренняя ссылка</a>
+  </p>
+
+  <p>
+    <a href="https://stepik.org" target="_blank" rel="noopener noreferrer">
+      Внешняя ссылка на Stepik
+    </a>
+  </p>
+
+  <p>
+    <a href="document.pdf">Ссылка на PDF-документ</a>
+  </p>
+
+  <p>
+    Моя страница ВК:
+    <a href="https://vk.ru/smolinkidze" target="_blank" rel="noopener noreferrer">
+      vk.ru/smolinkidze
+    </a>
+  </p>
+
+  <h2>Форма</h2>
+
+  <form>
+    <label>
+      Имя:
+      <input type="text" name="username" placeholder="Введите имя">
+    </label>
+
+    <label>
+      Email:
+      <input type="email" name="email" placeholder="Введите email" required>
+    </label>
+
+    <button type="submit">Отправить</button>
+  </form>
+
+  <p>Работу выполнила Ксю Ксюша.</p>
+
+</body>
+</html>

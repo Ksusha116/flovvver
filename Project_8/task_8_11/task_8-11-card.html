@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ксю Ксюша">
+  <title>Карточка товара</title>
+
+  <style>
+    /* Общие стили страницы */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #222222;
+      line-height: 1.5;
+    }
+
+    /*
+      Общий стиль карточки.
+      Он задаёт фон, отступы, рамку и ширину.
+    */
+    .card {
+      background: #ffffff;
+      width: 320px;
+      margin: 30px auto;
+      padding: 20px 25px 20px 25px;
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+    }
+
+    h1, h2, h3 {
+      color: #1a237e;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .card.product {
+      border: 2px solid #4caf50;
+      background: #fafaf7;
+    }
+
+    .description {
+      color: #333333;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      color: #2e7d32;
+      font-size: 22px;
+      font-weight: bold; /* цена выделяется жирным */
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn.btn-primary {
+      background: #4caf50;
+      color: white;
+      font-size: 16px;
+    }
+
+    .btn.btn-primary:hover {
+      background: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Карточка товара</h1>
+
+  <div class="card product">
+    <h2>Учебный блокнот</h2>
+
+    <p class="description">
+      Удобный блокнот для записей по информатике, HTML и CSS.
+    </p>
+
+    <p class="price">1500 ₽</p>
+
+    <button class="btn btn-primary">Купить</button>
+  </div>
+
+  <p>
+    Моя страница ВК:
+    <a href="https://vk.ru/smolinkidze" target="_blank" rel="noopener noreferrer">
+      vk.ru/smolinkidze
+    </a>
+  </p>
+
+  <p>Работу выполнила Ксю Ксюша.</p>
+
+</body>
+</html>

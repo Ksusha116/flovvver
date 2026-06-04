@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ксю Ксюша">
+  <title>Карточки с классами</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      border: 1px solid #cccccc;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 10px;
+      background: #ffffff;
+    }
+
+    .priority-high {
+      border-left: 8px solid red;
+    }
+
+    .priority-medium {
+      border-left: 8px solid orange;
+    }
+
+    .priority-low {
+      border-left: 8px solid green;
+    }
+
+    .featured {
+      background: #f5f5ff;
+      box-shadow: 0 0 10px #999999;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Карточки задач</h1>
+
+  <div class="card priority-high featured">
+    <h3>Сдать HTML</h3>
+    <p>Это важная задача. Нужно проверить все файлы и загрузить их в репозиторий.</p>
+  </div>
+
+  <div class="card priority-high">
+    <h3>Повторить CSS</h3>
+    <p>Нужно повторить способы подключения CSS и основные селекторы.</p>
+  </div>
+
+  <div class="card priority-medium">
+    <h3>Проверить папки</h3>
+    <p>Нужно убедиться, что все файлы лежат в правильных папках.</p>
+  </div>
+
+  <div class="card priority-medium">
+    <h3>Сделать скриншоты</h3>
+    <p>Нужно открыть страницы в браузере и сохранить нужные скриншоты.</p>
+  </div>
+
+  <div class="card priority-low">
+    <h3>Навести порядок</h3>
+    <p>Можно переименовать файлы и убрать лишние материалы из папки.</p>
+  </div>
+
+  <div class="card priority-low">
+    <h3>Повторить теорию</h3>
+    <p>Полезно ещё раз прочитать, чем id отличается от class.</p>
+  </div>
+
+  <p>Работу выполнила Ксю Ксюша.</p>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ксю Ксюша">
+  <title>Единицы измерения CSS</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      font-size: 20px;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    .box {
+      border: 1px solid #4caf50;
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #fafaf7;
+    }
+
+    .size-px {
+      width: 200px;
+    }
+
+    .size-em {
+      width: 15em;
+    }
+
+    .size-rem {
+      width: 12rem;
+    }
+
+    .size-percent {
+      width: 50%;
+    }
+
+    .size-vw {
+      width: 30vw;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Эксперимент с единицами измерения</h1>
+
+  <div class="box size-px">Блок 1 — ширина 200px</div>
+
+  <div class="box size-em">Блок 2 — ширина 15em</div>
+
+  <div class="box size-rem">Блок 3 — ширина 12rem</div>
+
+  <div class="box size-percent">Блок 4 — ширина 50%</div>
+
+  <div class="box size-vw">Блок 5 — ширина 30vw</div>
+
+  <p>
+    Если менять размер окна браузера, блоки с процентами и vw будут менять ширину.
+    Блок с px остаётся одинаковым.
+  </p>
+
+  <p>Работу выполнила Ксю Ксюша.</p>
+
+</body>
+</html>

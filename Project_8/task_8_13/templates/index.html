@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ксю Ксюша">
+  <title>Анализ учебной БД</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>📊 Анализ учебной БД</h1>
+    <p>Интерактивный дашборд для testdb</p>
+  </header>
+
+  <div class="layout">
+    <aside class="controls">
+      <h2>Статистика</h2>
+
+      <button class="action-btn" data-action="stat" data-metric="mean">
+        Среднее
+      </button>
+
+      <button class="action-btn" data-action="stat" data-metric="median">
+        Медиана
+      </button>
+
+      <button class="action-btn" data-action="stat" data-metric="total">
+        Количество
+      </button>
+
+      <h2>Графики</h2>
+
+      <button class="action-btn" data-action="chart" data-kind="histogram">
+        Распределение оценок
+      </button>
+
+      <button class="action-btn" data-action="chart" data-kind="courses">
+        Средний балл по курсам
+      </button>
+
+      <button class="action-btn clear" id="clear-btn">
+        🗑 Очистить
+      </button>
+    </aside>
+
+    <main id="result-area">
+      <p class="placeholder">
+        ← Нажмите кнопку слева, чтобы увидеть результат
+      </p>
+    </main>
+  </div>
+
+  <footer>
+    <p>
+      © 2026 Ксю Ксюша · Курс «Информатика»
+    </p>
+    <p>
+      Моя страница ВК:
+      <a href="https://vk.ru/smolinkidze" target="_blank" rel="noopener noreferrer">
+        vk.ru/smolinkidze
+      </a>
+    </p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
